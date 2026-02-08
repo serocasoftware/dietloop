@@ -16,6 +16,7 @@ const appState = {
 // Inicialización
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
+    initMobileMenu();
     initMonthSelectors();
     initWeekSelectors();
     initWeightForm();
@@ -46,10 +47,79 @@ function initNavigation() {
             navItems.forEach(nav => nav.classList.remove('active'));
             item.classList.add('active');
             
+            // Cerrar menú móvil si está abierto
+            closeMobileMenu();
+            
             // Mostrar vista correspondiente
             showView(view);
         });
     });
+}
+
+// ============================================
+// Menú Móvil
+// ============================================
+
+function initMobileMenu() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeSidebar = document.getElementById('close-sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', toggleMobileMenu);
+    }
+    
+    if (closeSidebar) {
+        closeSidebar.addEventListener('click', closeMobileMenu);
+    }
+    
+    if (overlay) {
+        overlay.addEventListener('click', closeMobileMenu);
+    }
+    
+    // Cerrar menú con tecla Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeMobileMenu();
+        }
+    });
+    
+    // Actualizar peso en header móvil
+    updateMobileWeight();
+}
+
+function toggleMobileMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const menuToggle = document.getElementById('menu-toggle');
+    
+    if (sidebar && overlay && menuToggle) {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        
+        // Prevenir scroll del body cuando el menú está abierto
+        document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
+    }
+}
+
+function closeMobileMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const menuToggle = document.getElementById('menu-toggle');
+    
+    if (sidebar) sidebar.classList.remove('open');
+    if (overlay) overlay.classList.remove('active');
+    if (menuToggle) menuToggle.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function updateMobileWeight() {
+    const mobileWeight = document.getElementById('mobile-current-weight');
+    if (mobileWeight) {
+        const currentWeight = getLatestWeight();
+        mobileWeight.textContent = `${currentWeight} kg`;
+    }
 }
 
 function showView(viewName) {
@@ -156,6 +226,9 @@ function updateDashboard() {
     const currentWeight = getLatestWeight();
     document.getElementById('current-weight').textContent = `${currentWeight} kg`;
     document.getElementById('to-lose').textContent = `${(currentWeight - userData.targetWeight).toFixed(1)} kg`;
+    
+    // Actualizar peso en header móvil
+    updateMobileWeight();
     
     // Actualizar detalles del mes
     document.getElementById('month-start-weight').textContent = `${goals.startWeight} kg`;

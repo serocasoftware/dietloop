@@ -1,95 +1,126 @@
 # DietLoop - Aplicación de Seguimiento de Peso
 
-Aplicación web local para el seguimiento de tu plan de pérdida de peso.
+Aplicación web responsive para el seguimiento de tu plan de pérdida de peso. Funciona en PC, tablet y smartphone.
+
+## 🌐 Acceso Online
+
+**URL:** https://serocasoftware.github.io/dietloop/webapp/
+
+## 📱 Diseño Responsive
+
+La aplicación se adapta automáticamente al dispositivo:
+
+| Dispositivo | Características |
+|-------------|-----------------|
+| **Desktop** (> 992px) | Sidebar fijo, layout completo |
+| **Tablet** (768px - 992px) | Sidebar más compacto |
+| **Móvil** (< 768px) | Menú hamburguesa, layout vertical |
 
 ## Cómo usar
 
-### Opción 1: Abrir directamente en el navegador
+### Opción 1: Versión Online (Recomendada)
+
+Accede directamente desde cualquier dispositivo:
+https://serocasoftware.github.io/dietloop/webapp/
+
+### Opción 2: Abrir localmente
 
 1. Navega a la carpeta `webapp`
 2. Haz doble clic en `index.html`
 3. Se abrirá en tu navegador predeterminado
 
-> **Nota:** Algunos navegadores pueden bloquear ciertas funcionalidades al abrir archivos locales. Si esto ocurre, usa la Opción 2.
-
-### Opción 2: Usar un servidor local (recomendado)
-
-#### Con Python (si lo tienes instalado):
+### Opción 3: Servidor local
 
 ```bash
 cd webapp
 python -m http.server 8080
 ```
 
-Luego abre en tu navegador: `http://localhost:8080`
-
-#### Con Node.js (si lo tienes instalado):
-
-```bash
-npx serve webapp
-```
-
-#### Con la extensión Live Server de VS Code:
-
-1. Instala la extensión "Live Server" en VS Code/Cursor
-2. Haz clic derecho en `index.html`
-3. Selecciona "Open with Live Server"
+Luego abre: `http://localhost:8080`
 
 ## Funcionalidades
 
-### Dashboard
+### 📊 Dashboard
 - Vista general del progreso del mes actual
 - Gráfica de evolución semanal
 - Plan de comidas y ejercicio del día
 - Estadísticas rápidas
 
-### Calendario
+### 📅 Calendario
 - Vista mensual con indicadores de comida y ejercicio
-- Click en un día para ver el detalle completo
+- Click/tap en un día para ver el detalle completo
 - Navegación entre meses
 
-### Plan de Dieta
+### 🥗 Plan de Dieta
 - Menú completo semana por semana
 - Desayuno, almuerzo, comida, merienda y cena
 - Cantidades recomendadas
 
-### Plan de Deporte
+### 💪 Plan de Deporte
 - Ejercicios detallados para cada día de entrenamiento
 - Progresión semanal
 - Días de descanso incluidos
 
-### Progreso
+### 📈 Progreso
 - Gráfica global: Objetivo vs Real
 - Resumen mensual en barras
 - Cumplimiento de objetivos
 - Tabla de registro de pesos
 - Formulario para registrar nuevos pesos
 
-### Histórico
+### 📚 Histórico
 - Timeline de todos los meses
 - Detalle de cada mes pasado
 - Comparativa de resultados
 
-## Datos
+### 🛒 Próxima Compra
+- Lista de la compra semanal
+- Organizada por secciones del supermercado
+- Alimentos prohibidos destacados
+- Consejos de compra
+- Precio estimado
 
-Los pesos que registres se guardan en el `localStorage` del navegador, por lo que persisten entre sesiones. Los datos del plan (dieta y ejercicio) están en `data.js`.
+## 🚫 Alimentos Prohibidos
 
-## Estructura de archivos
+La dieta excluye los siguientes alimentos:
+- Brócoli, Coliflor, Repollo
+- Garbanzos, Alcachofa, Lombarda
+- Chocolate
+- Pescadilla, Quinoa
+- Pepino, Pepinillo, Aceitunas
+- Kiwi, Membrillo
+
+## 💾 Datos
+
+Los pesos que registres se guardan en el `localStorage` del navegador, por lo que persisten entre sesiones.
+
+## 📁 Estructura de archivos
 
 ```
 webapp/
-├── index.html    # Estructura HTML
-├── styles.css    # Estilos visuales
-├── app.js        # Lógica de la aplicación
-├── data.js       # Datos del plan (dieta y ejercicio)
+├── index.html    # Estructura HTML + componentes móviles
+├── styles.css    # Estilos + media queries responsive
+├── app.js        # Lógica + menú móvil
+├── data.js       # Datos del plan + listas de compra
 └── README.md     # Este archivo
 ```
 
-## Personalización
+## 🔧 Personalización
 
-Para añadir datos de nuevos meses, edita el archivo `data.js` y añade la información en el objeto `monthData` siguiendo la misma estructura del Mes 1.
+Para añadir datos de nuevos meses, edita `data.js`:
+- `monthData` - Planes de dieta y ejercicio
+- `shoppingLists` - Listas de la compra
+- `monthlyGoals` - Objetivos de peso
 
 ## Requisitos
 
 - Navegador web moderno (Chrome, Firefox, Edge, Safari)
-- Conexión a internet (solo para cargar Chart.js y la fuente)
+- Conexión a internet (para Chart.js y fuentes)
+
+## Tecnologías
+
+- HTML5, CSS3, JavaScript (ES6+)
+- Chart.js para gráficas
+- CSS Grid y Flexbox para layout
+- Media Queries para responsive
+- LocalStorage para persistencia

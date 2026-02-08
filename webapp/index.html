@@ -10,8 +10,26 @@
 </head>
 <body>
     <div class="app-container">
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+            <div class="mobile-logo">
+                <span class="logo-icon">🎯</span>
+                <h1>DietLoop</h1>
+            </div>
+            <div class="mobile-weight">
+                <span id="mobile-current-weight">85 kg</span>
+            </div>
+        </header>
+
+        <!-- Overlay for mobile menu -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
+            <button class="close-sidebar" id="close-sidebar" aria-label="Cerrar menú">✕</button>
             <div class="logo">
                 <span class="logo-icon">🎯</span>
                 <h1>DietLoop</h1>
