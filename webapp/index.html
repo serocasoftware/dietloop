@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DietLoop - Seguimiento de Peso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">🎯</span>
+                <h1>DietLoop</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-view="dashboard">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item" data-view="calendar">
+                    <span class="nav-icon">📅</span>
+                    Calendario
+                </a>
+                <a href="#" class="nav-item" data-view="diet">
+                    <span class="nav-icon">🥗</span>
+                    Plan de Dieta
+                </a>
+                <a href="#" class="nav-item" data-view="exercise">
+                    <span class="nav-icon">💪</span>
+                    Plan de Deporte
+                </a>
+                <a href="#" class="nav-item" data-view="progress">
+                    <span class="nav-icon">📈</span>
+                    Progreso
+                </a>
+                <a href="#" class="nav-item" data-view="history">
+                    <span class="nav-icon">📚</span>
+                    Histórico
+                </a>
+            </nav>
+            <div class="user-stats">
+                <div class="stat-card">
+                    <span class="stat-label">Peso Actual</span>
+                    <span class="stat-value" id="current-weight">85 kg</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Objetivo</span>
+                    <span class="stat-value" id="target-weight">72 kg</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Por perder</span>
+                    <span class="stat-value" id="to-lose">13 kg</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard View -->
+            <section id="dashboard-view" class="view active">
+                <header class="view-header">
+                    <h2>Dashboard</h2>
+                    <div class="month-selector">
+                        <button class="btn-month" id="prev-month">◀</button>
+                        <span id="current-month-display">Mes 1</span>
+                        <button class="btn-month" id="next-month">▶</button>
+                    </div>
+                </header>
+
+                <div class="dashboard-grid">
+                    <!-- Progress Card -->
+                    <div class="card progress-card">
+                        <h3>Progreso del Mes</h3>
+                        <div class="progress-ring-container">
+                            <canvas id="progress-ring"></canvas>
+                            <div class="progress-text">
+                                <span class="progress-value" id="month-progress">0%</span>
+                                <span class="progress-label">completado</span>
+                            </div>
+                        </div>
+                        <div class="progress-details">
+                            <div class="detail">
+                                <span class="detail-label">Peso inicio mes</span>
+                                <span class="detail-value" id="month-start-weight">85 kg</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Objetivo mes</span>
+                                <span class="detail-value" id="month-target-weight">82-83 kg</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Peso actual</span>
+                                <span class="detail-value" id="month-current-weight">-- kg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weekly Chart -->
+                    <div class="card chart-card">
+                        <h3>Evolución Semanal</h3>
+                        <canvas id="weekly-chart"></canvas>
+                    </div>
+
+                    <!-- Today's Plan -->
+                    <div class="card today-card">
+                        <h3>Plan de Hoy</h3>
+                        <div class="today-date" id="today-date"></div>
+                        <div class="today-content">
+                            <div class="today-section">
+                                <h4>🥗 Comidas</h4>
+                                <div id="today-meals"></div>
+                            </div>
+                            <div class="today-section">
+                                <h4>💪 Ejercicio</h4>
+                                <div id="today-exercise"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="card stats-card">
+                        <h3>Estadísticas Rápidas</h3>
+                        <div class="quick-stats">
+                            <div class="quick-stat">
+                                <span class="qs-value" id="days-completed">0</span>
+                                <span class="qs-label">Días completados</span>
+                            </div>
+                            <div class="quick-stat">
+                                <span class="qs-value" id="workouts-done">0</span>
+                                <span class="qs-label">Entrenamientos</span>
+                            </div>
+                            <div class="quick-stat">
+                                <span class="qs-value" id="total-lost">0 kg</span>
+                                <span class="qs-label">Total perdido</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendar View -->
+            <section id="calendar-view" class="view">
+                <header class="view-header">
+                    <h2>Calendario</h2>
+                    <div class="month-selector">
+                        <button class="btn-month" id="cal-prev-month">◀</button>
+                        <span id="cal-month-display">Mes 1</span>
+                        <button class="btn-month" id="cal-next-month">▶</button>
+                    </div>
+                </header>
+
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <span>Lun</span>
+                        <span>Mar</span>
+                        <span>Mié</span>
+                        <span>Jue</span>
+                        <span>Vie</span>
+                        <span>Sáb</span>
+                        <span>Dom</span>
+                    </div>
+                    <div class="calendar-grid" id="calendar-grid"></div>
+                </div>
+
+                <div class="day-detail" id="day-detail">
+                    <h3>Selecciona un día para ver los detalles</h3>
+                </div>
+            </section>
+
+            <!-- Diet View -->
+            <section id="diet-view" class="view">
+                <header class="view-header">
+                    <h2>Plan de Dieta</h2>
+                    <div class="month-selector">
+                        <button class="btn-month" id="diet-prev-month">◀</button>
+                        <span id="diet-month-display">Mes 1</span>
+                        <button class="btn-month" id="diet-next-month">▶</button>
+                    </div>
+                </header>
+
+                <div class="diet-info">
+                    <div class="diet-params">
+                        <div class="param">
+                            <span class="param-label">Calorías diarias</span>
+                            <span class="param-value">1.800-1.900 kcal</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">Proteínas</span>
+                            <span class="param-value">100-110g</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">Carbohidratos</span>
+                            <span class="param-value">180-200g</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">Grasas</span>
+                            <span class="param-value">55-65g</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">Agua</span>
+                            <span class="param-value">2-2.5 L</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-selector">
+                    <button class="week-btn active" data-week="1">Semana 1</button>
+                    <button class="week-btn" data-week="2">Semana 2</button>
+                    <button class="week-btn" data-week="3">Semana 3</button>
+                    <button class="week-btn" data-week="4">Semana 4</button>
+                </div>
+
+                <div class="diet-week-content" id="diet-week-content"></div>
+            </section>
+
+            <!-- Exercise View -->
+            <section id="exercise-view" class="view">
+                <header class="view-header">
+                    <h2>Plan de Deporte</h2>
+                    <div class="month-selector">
+                        <button class="btn-month" id="ex-prev-month">◀</button>
+                        <span id="ex-month-display">Mes 1</span>
+                        <button class="btn-month" id="ex-next-month">▶</button>
+                    </div>
+                </header>
+
+                <div class="exercise-info">
+                    <div class="exercise-params">
+                        <div class="param">
+                            <span class="param-label">Horas semanales</span>
+                            <span class="param-value">3 horas</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">Sesiones</span>
+                            <span class="param-value">4 x 45 min</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">Nivel</span>
+                            <span class="param-value">Principiante</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">FCM objetivo</span>
+                            <span class="param-value">90-107 ppm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-selector">
+                    <button class="week-btn active" data-week="1">Semana 1</button>
+                    <button class="week-btn" data-week="2">Semana 2</button>
+                    <button class="week-btn" data-week="3">Semana 3</button>
+                    <button class="week-btn" data-week="4">Semana 4</button>
+                </div>
+
+                <div class="exercise-week-content" id="exercise-week-content"></div>
+            </section>
+
+            <!-- Progress View -->
+            <section id="progress-view" class="view">
+                <header class="view-header">
+                    <h2>Progreso Global</h2>
+                </header>
+
+                <div class="progress-charts">
+                    <div class="card full-width">
+                        <h3>Evolución del Peso - Objetivo vs Real</h3>
+                        <canvas id="global-progress-chart"></canvas>
+                    </div>
+
+                    <div class="card">
+                        <h3>Resumen por Mes</h3>
+                        <canvas id="monthly-summary-chart"></canvas>
+                    </div>
+
+                    <div class="card">
+                        <h3>Cumplimiento de Objetivos</h3>
+                        <canvas id="goals-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="progress-table">
+                    <h3>Registro de Peso</h3>
+                    <table id="weight-table">
+                        <thead>
+                            <tr>
+                                <th>Mes</th>
+                                <th>Semana</th>
+                                <th>Fecha</th>
+                                <th>Peso Objetivo</th>
+                                <th>Peso Real</th>
+                                <th>Diferencia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="weight-table-body"></tbody>
+                    </table>
+                </div>
+
+                <div class="weight-input-section">
+                    <h3>Registrar Peso</h3>
+                    <div class="weight-input-form">
+                        <div class="form-group">
+                            <label>Fecha</label>
+                            <input type="date" id="weight-date">
+                        </div>
+                        <div class="form-group">
+                            <label>Peso (kg)</label>
+                            <input type="number" id="weight-value" step="0.1" placeholder="Ej: 84.5">
+                        </div>
+                        <button class="btn-primary" id="save-weight">Guardar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History View -->
+            <section id="history-view" class="view">
+                <header class="view-header">
+                    <h2>Histórico de Meses</h2>
+                </header>
+
+                <div class="history-timeline" id="history-timeline"></div>
+
+                <div class="history-detail" id="history-detail">
+                    <p>Selecciona un mes del historial para ver los detalles</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
