@@ -8,6 +8,8 @@ const appState = {
     currentMonth: 1,
     selectedDay: null,
     selectedWeek: 1,
+    shoppingMonth: 1,
+    shoppingWeek: 1,
     charts: {}
 };
 
@@ -17,12 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     initMonthSelectors();
     initWeekSelectors();
     initWeightForm();
+    initShoppingSelectors();
     updateDashboard();
     renderCalendar();
     renderDietPlan();
     renderExercisePlan();
     renderProgress();
     renderHistory();
+    renderShoppingList();
     setTodayDate();
 });
 
@@ -1140,6 +1144,148 @@ function showHistoryDetail(month) {
     }
     
     html += '</tbody></table>';
+    
+    container.innerHTML = html;
+}
+
+// ============================================
+// Lista de la Compra
+// ============================================
+
+function initShoppingSelectors() {
+    const prevBtn = document.getElementById('shop-prev-week');
+    const nextBtn = document.getElementById('shop-next-week');
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => changeShoppingWeek(-1));
+    }
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => changeShoppingWeek(1));
+    }
+}
+
+function changeShoppingWeek(delta) {
+    let newWeek = appState.shoppingWeek + delta;
+    let newMonth = appState.shoppingMonth;
+    
+    if (newWeek > 4) {
+        newWeek = 1;
+        newMonth++;
+    } else if (newWeek < 1) {
+        newWeek = 4;
+        newMonth--;
+    }
+    
+    // Limitar a meses disponibles
+    if (newMonth < 1) {
+        newMonth = 1;
+        newWeek = 1;
+    } else if (newMonth > 6) {
+        newMonth = 6;
+        newWeek = 4;
+    }
+    
+    appState.shoppingMonth = newMonth;
+    appState.shoppingWeek = newWeek;
+    
+    renderShoppingList();
+}
+
+function renderShoppingList() {
+    const month = appState.shoppingMonth;
+    const week = appState.shoppingWeek;
+    
+    // Actualizar display del selector
+    const display = document.getElementById('shop-week-display');
+    if (display) {
+        display.textContent = `Mes ${month} - Semana ${week}`;
+    }
+    
+    // Actualizar info del período
+    const periodEl = document.getElementById('shopping-period');
+    if (periodEl) {
+        periodEl.textContent = `Mes ${month}, Semana ${week}`;
+    }
+    
+    // Renderizar alimentos prohibidos
+    renderForbiddenFoods();
+    
+    // Obtener lista de compra
+    const shoppingData = shoppingLists[month]?.[week];
+    
+    if (!shoppingData) {
+        const container = document.getElementById('shopping-categories');
+        if (container) {
+            container.innerHTML = '<div class="card"><p>Lista de compra no disponible para este período. Se generará cuando se cree el plan del mes correspondiente.</p></div>';
+        }
+        return;
+    }
+    
+    // Actualizar precio estimado
+    const priceEl = document.getElementById('shopping-price');
+    if (priceEl) {
+        priceEl.textContent = shoppingData.priceEstimate;
+    }
+    
+    // Renderizar categorías
+    renderShoppingCategories(shoppingData.categories);
+    
+    // Renderizar consejos
+    renderShoppingTips(shoppingData.tips);
+}
+
+function renderForbiddenFoods() {
+    const container = document.getElementById('forbidden-list');
+    if (!container) return;
+    
+    let html = '';
+    forbiddenFoods.forEach(food => {
+        html += `<span class="forbidden-item">${food}</span>`;
+    });
+    
+    container.innerHTML = html;
+}
+
+function renderShoppingCategories(categories) {
+    const container = document.getElementById('shopping-categories');
+    if (!container) return;
+    
+    let html = '';
+    
+    categories.forEach(category => {
+        html += `
+            <div class="shopping-category">
+                <div class="category-header">
+                    <span class="category-icon">${category.icon}</span>
+                    ${category.name}
+                </div>
+                <div class="category-items">
+        `;
+        
+        category.items.forEach(item => {
+            html += `
+                <div class="shopping-item">
+                    <span class="item-name">${item.name}</span>
+                    <span class="item-quantity">${item.quantity}</span>
+                    <span class="item-notes">${item.notes}</span>
+                </div>
+            `;
+        });
+        
+        html += '</div></div>';
+    });
+    
+    container.innerHTML = html;
+}
+
+function renderShoppingTips(tips) {
+    const container = document.getElementById('shopping-tips');
+    if (!container || !tips) return;
+    
+    let html = '';
+    tips.forEach(tip => {
+        html += `<li>${tip}</li>`;
+    });
     
     container.innerHTML = html;
 }

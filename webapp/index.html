@@ -41,6 +41,10 @@
                     <span class="nav-icon">📚</span>
                     Histórico
                 </a>
+                <a href="#" class="nav-item" data-view="shopping">
+                    <span class="nav-icon">🛒</span>
+                    Próxima Compra
+                </a>
             </nav>
             <div class="user-stats">
                 <div class="stat-card">
@@ -324,6 +328,43 @@
 
                 <div class="history-detail" id="history-detail">
                     <p>Selecciona un mes del historial para ver los detalles</p>
+                </div>
+            </section>
+
+            <!-- Shopping List View -->
+            <section id="shopping-view" class="view">
+                <header class="view-header">
+                    <h2>Próxima Compra</h2>
+                    <div class="month-selector">
+                        <button class="btn-month" id="shop-prev-week">◀</button>
+                        <span id="shop-week-display">Mes 1 - Semana 1</span>
+                        <button class="btn-month" id="shop-next-week">▶</button>
+                    </div>
+                </header>
+
+                <div class="shopping-info">
+                    <div class="shopping-header-info">
+                        <div class="param">
+                            <span class="param-label">Lista para</span>
+                            <span class="param-value" id="shopping-period">Mes 1, Semana 1</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-label">Precio estimado</span>
+                            <span class="param-value" id="shopping-price">50-68€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopping-forbidden">
+                    <h3>⛔ Alimentos Prohibidos (No comprar)</h3>
+                    <div class="forbidden-list" id="forbidden-list"></div>
+                </div>
+
+                <div class="shopping-categories" id="shopping-categories"></div>
+
+                <div class="shopping-tips card">
+                    <h3>💡 Consejos de compra</h3>
+                    <ul id="shopping-tips"></ul>
                 </div>
             </section>
         </main>
