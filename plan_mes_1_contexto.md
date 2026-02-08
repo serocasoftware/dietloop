@@ -20,7 +20,14 @@
 - Lombarda  
 - Chocolate  
 - Coliflor  
-- Repollo  
+- Repollo
+- Pescadilla
+- Quinoa
+- Pepino
+- Pepinillo
+- Aceitunas
+- Kiwi
+- Membrillo  
 
 ---
 

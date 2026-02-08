@@ -231,13 +231,13 @@ const monthData = {
                     almuerzo: { food: "Manzana + nueces", quantity: "1 manzana + 20g nueces" },
                     comida: { food: "Pechuga de pollo a la plancha + arroz integral + judías verdes salteadas", quantity: "150g pollo + 70g arroz + 150g judías" },
                     merienda: { food: "Yogur natural", quantity: "125g" },
-                    cena: { food: "Tortilla francesa (2 huevos) + ensalada mixta", quantity: "2 huevos + ensalada abundante" }
+                    cena: { food: "Tortilla francesa (2 huevos) + ensalada mixta (lechuga, tomate, zanahoria)", quantity: "2 huevos + ensalada abundante" }
                 },
                 tuesday: {
                     desayuno: { food: "Tostadas integrales con tomate + AOVE + huevo cocido", quantity: "2 rebanadas + 1 huevo" },
                     almuerzo: { food: "Plátano pequeño", quantity: "1 unidad" },
                     comida: { food: "Lentejas estofadas con zanahoria y puerro", quantity: "80g lentejas + verduras" },
-                    merienda: { food: "Queso fresco con membrillo", quantity: "80g queso + 30g membrillo" },
+                    merienda: { food: "Queso fresco con miel y nueces", quantity: "80g queso + 10g miel + 15g nueces" },
                     cena: { food: "Merluza al horno con calabacín", quantity: "150g merluza + 200g calabacín" }
                 },
                 wednesday: {
@@ -250,7 +250,7 @@ const monthData = {
                 thursday: {
                     desayuno: { food: "Yogur griego natural + arándanos + nueces", quantity: "150g yogur + 80g arándanos + 20g nueces" },
                     almuerzo: { food: "Zanahoria baby", quantity: "100g" },
-                    comida: { food: "Salmón a la plancha + quinoa + espinacas salteadas", quantity: "150g salmón + 60g quinoa + 100g espinacas" },
+                    comida: { food: "Salmón a la plancha + arroz integral + espinacas salteadas", quantity: "150g salmón + 60g arroz integral + 100g espinacas" },
                     merienda: { food: "Yogur natural con miel", quantity: "125g yogur + 10g miel" },
                     cena: { food: "Revuelto de pavo con champiñones + ensalada", quantity: "100g pavo + 100g champiñones" }
                 },
@@ -259,11 +259,11 @@ const monthData = {
                     almuerzo: { food: "Naranja + anacardos", quantity: "1 naranja + 20g anacardos" },
                     comida: { food: "Ternera magra a la plancha + patatas cocidas + pimientos asados", quantity: "150g ternera + 150g patata + pimientos" },
                     merienda: { food: "Batido de leche con cacao puro sin azúcar y plátano", quantity: "200ml leche + cacao + 1/2 plátano" },
-                    cena: { food: "Pescadilla al vapor con limón + ensalada verde", quantity: "150g pescadilla + ensalada" }
+                    cena: { food: "Lenguado al vapor con limón + ensalada verde", quantity: "150g lenguado + ensalada" }
                 },
                 saturday: {
                     desayuno: { food: "Huevos revueltos con tomate + pan integral", quantity: "2 huevos + tomate + 1 rebanada" },
-                    almuerzo: { food: "Kiwi", quantity: "2 kiwis" },
+                    almuerzo: { food: "Mandarina", quantity: "2 mandarinas" },
                     comida: { food: "Paella de pollo y verduras (controlada)", quantity: "1 ración moderada" },
                     merienda: { food: "Yogur natural con fresas", quantity: "125g yogur + 80g fresas" },
                     cena: { food: "Pechuga de pavo a la plancha + espárragos", quantity: "120g pavo + 150g espárragos" }
@@ -278,7 +278,7 @@ const monthData = {
             },
             2: {
                 monday: {
-                    desayuno: { food: "Queso fresco con miel y kiwi", quantity: "100g queso + 15g miel + 1 kiwi" },
+                    desayuno: { food: "Queso fresco con miel y fresas", quantity: "100g queso + 15g miel + 80g fresas" },
                     almuerzo: { food: "Yogur natural + nueces", quantity: "125g yogur + 15g nueces" },
                     comida: { food: "Pollo al horno con boniato y pimiento", quantity: "150g pollo + 150g boniato + pimiento" },
                     merienda: { food: "Mandarina", quantity: "2 mandarinas" },
@@ -339,7 +339,7 @@ const monthData = {
                     desayuno: { food: "Yogur griego + granada + avena", quantity: "150g yogur + granada + 30g avena" },
                     almuerzo: { food: "Tostada con pavo", quantity: "1 rebanada + 2 lonchas" },
                     comida: { food: "Lentejas con arroz y verduras", quantity: "60g lentejas + 40g arroz + verduras" },
-                    merienda: { food: "Queso fresco con membrillo", quantity: "80g queso + 25g membrillo" },
+                    merienda: { food: "Queso fresco con miel y nueces", quantity: "80g queso + 10g miel + 15g nueces" },
                     cena: { food: "Huevos revueltos con espárragos trigueros", quantity: "2 huevos + 100g espárragos" }
                 },
                 wednesday: {
@@ -353,7 +353,7 @@ const monthData = {
                     desayuno: { food: "Huevos revueltos con tomate + pan integral", quantity: "2 huevos + 1 rebanada" },
                     almuerzo: { food: "Manzana + almendras", quantity: "1 manzana + 20g almendras" },
                     comida: { food: "Macarrones integrales con carne picada magra y tomate", quantity: "70g pasta + 100g carne + tomate" },
-                    merienda: { food: "Kiwi", quantity: "2 kiwis" },
+                    merienda: { food: "Mandarina", quantity: "2 mandarinas" },
                     cena: { food: "Sepia a la plancha con ensalada", quantity: "150g sepia + ensalada" }
                 },
                 friday: {
@@ -416,7 +416,7 @@ const monthData = {
                 },
                 saturday: {
                     desayuno: { food: "Huevos benedictinos caseros (sin salsa holandesa)", quantity: "2 huevos + jamón + tostada" },
-                    almuerzo: { food: "Kiwi", quantity: "2 kiwis" },
+                    almuerzo: { food: "Mandarina", quantity: "2 mandarinas" },
                     comida: { food: "Cordero al horno con patatas", quantity: "130g cordero + 120g patatas" },
                     merienda: { food: "Yogur natural con arándanos", quantity: "125g yogur + arándanos" },
                     cena: { food: "Gazpacho + jamón serrano", quantity: "1 bol + 40g jamón" }

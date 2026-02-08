@@ -190,6 +190,13 @@
 - Chocolate
 - Coliflor
 - Repollo
+- Pescadilla
+- Quinoa
+- Pepino
+- Pepinillo
+- Aceitunas
+- Kiwi
+- Membrillo
 
 ---
 
@@ -205,7 +212,7 @@
 | **Almuerzo** | Manzana + nueces | 1 manzana mediana + 20g nueces |
 | **Comida** | Pechuga de pollo a la plancha + arroz integral + judías verdes salteadas | 150g pollo + 70g arroz (peso crudo) + 150g judías |
 | **Merienda** | Yogur natural | 125g |
-| **Cena** | Tortilla francesa (2 huevos) + ensalada mixta (lechuga, tomate, pepino) | 2 huevos + ensalada abundante |
+| **Cena** | Tortilla francesa (2 huevos) + ensalada mixta (lechuga, tomate, zanahoria rallada) | 2 huevos + ensalada abundante |
 
 ### Martes
 
@@ -214,7 +221,7 @@
 | **Desayuno** | Tostadas integrales con tomate natural rallado + AOVE + huevo cocido | 2 rebanadas + 1 huevo |
 | **Almuerzo** | Plátano pequeño | 1 unidad |
 | **Comida** | Lentejas estofadas con zanahoria y puerro | 80g lentejas (peso crudo) + verduras |
-| **Merienda** | Queso fresco con membrillo | 80g queso + 30g membrillo |
+| **Merienda** | Queso fresco con miel y nueces | 80g queso + 10g miel + 15g nueces |
 | **Cena** | Merluza al horno con calabacín | 150g merluza + 200g calabacín |
 
 ### Miércoles
@@ -233,7 +240,7 @@
 |--------|-----------|---------------------|
 | **Desayuno** | Yogur griego natural + arándanos + nueces | 150g yogur + 80g arándanos + 20g nueces |
 | **Almuerzo** | Zanahoria baby | 100g |
-| **Comida** | Salmón a la plancha + quinoa + espinacas salteadas | 150g salmón + 60g quinoa + 100g espinacas |
+| **Comida** | Salmón a la plancha + arroz integral + espinacas salteadas | 150g salmón + 60g arroz integral + 100g espinacas |
 | **Merienda** | Yogur natural con una cucharadita de miel | 125g yogur + 10g miel |
 | **Cena** | Revuelto de pavo con champiñones + ensalada | 100g pavo + 100g champiñones |
 
@@ -245,14 +252,14 @@
 | **Almuerzo** | Naranja + un puñado de anacardos | 1 naranja + 20g anacardos |
 | **Comida** | Ternera magra a la plancha + patatas cocidas + pimientos asados | 150g ternera + 150g patata + pimientos |
 | **Merienda** | Batido de leche con cacao puro sin azúcar y plátano | 200ml leche + 1 cdta cacao + 1/2 plátano |
-| **Cena** | Pescadilla al vapor con limón + ensalada verde | 150g pescadilla + ensalada |
+| **Cena** | Lenguado al vapor con limón + ensalada verde | 150g lenguado + ensalada |
 
 ### Sábado
 
 | Comida | Alimentos | Cantidad aproximada |
 |--------|-----------|---------------------|
 | **Desayuno** | Huevos revueltos con tomate + pan integral | 2 huevos + tomate + 1 rebanada |
-| **Almuerzo** | Kiwi | 2 kiwis |
+| **Almuerzo** | Mandarina | 2 mandarinas |
 | **Comida** | Paella de pollo y verduras (controlada) | 1 ración moderada |
 | **Merienda** | Yogur natural con fresas | 125g yogur + 80g fresas |
 | **Cena** | Pechuga de pavo a la plancha + espárragos | 120g pavo + 150g espárragos |
@@ -275,7 +282,7 @@
 
 | Comida | Alimentos | Cantidad aproximada |
 |--------|-----------|---------------------|
-| **Desayuno** | Queso fresco con miel y kiwi | 100g queso + 15g miel + 1 kiwi |
+| **Desayuno** | Queso fresco con miel y fresas | 100g queso + 15g miel + 80g fresas |
 | **Almuerzo** | Yogur natural + nueces | 125g yogur + 15g nueces |
 | **Comida** | Pollo al horno con boniato y pimiento | 150g pollo + 150g boniato + pimiento |
 | **Merienda** | Mandarina | 2 mandarinas |
@@ -362,7 +369,7 @@
 | **Desayuno** | Yogur griego + granada + avena | 150g yogur + granada + 30g avena |
 | **Almuerzo** | Tostada con pavo | 1 rebanada + 2 lonchas |
 | **Comida** | Lentejas con arroz y verduras | 60g lentejas + 40g arroz + verduras |
-| **Merienda** | Queso fresco con membrillo | 80g queso + 25g membrillo |
+| **Merienda** | Queso fresco con miel y nueces | 80g queso + 10g miel + 15g nueces |
 | **Cena** | Huevos revueltos con espárragos trigueros | 2 huevos + 100g espárragos |
 
 ### Miércoles
@@ -382,7 +389,7 @@
 | **Desayuno** | Huevos revueltos con tomate + pan integral | 2 huevos + 1 rebanada |
 | **Almuerzo** | Manzana + almendras | 1 manzana + 20g almendras |
 | **Comida** | Macarrones integrales con carne picada magra y tomate | 70g pasta + 100g carne + tomate |
-| **Merienda** | Kiwi | 2 kiwis |
+| **Merienda** | Mandarina | 2 mandarinas |
 | **Cena** | Sepia a la plancha con ensalada | 150g sepia + ensalada |
 
 ### Viernes
@@ -474,7 +481,7 @@
 | Comida | Alimentos | Cantidad aproximada |
 |--------|-----------|---------------------|
 | **Desayuno** | Huevos benedictinos caseros (sin salsa holandesa) | 2 huevos + jamón + tostada |
-| **Almuerzo** | Kiwi | 2 kiwis |
+| **Almuerzo** | Mandarina | 2 mandarinas |
 | **Comida** | Cordero al horno con patatas | 130g cordero + 120g patatas |
 | **Merienda** | Yogur natural con arándanos | 125g yogur + arándanos |
 | **Cena** | Gazpacho + jamón serrano | 1 bol + 40g jamón |
@@ -499,7 +506,7 @@
 
 ### Nutrición para la piel
 - Consumir alimentos ricos en:
-  - **Vitamina C:** Cítricos, fresas, kiwi, pimiento
+  - **Vitamina C:** Cítricos, fresas, pimiento, tomate
   - **Vitamina E:** Frutos secos, aguacate, aceite de oliva
   - **Zinc:** Mariscos, huevos, legumbres
   - **Colágeno:** Caldos de huesos, gelatina sin azúcar
