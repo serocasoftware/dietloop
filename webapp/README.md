@@ -90,9 +90,40 @@ La dieta excluye los siguientes alimentos:
 - Pepino, Pepinillo, Aceitunas
 - Kiwi, Membrillo
 
-## 💾 Datos
+## 💾 Datos y Sincronización
 
-Los pesos que registres se guardan en el `localStorage` del navegador, por lo que persisten entre sesiones.
+### Opción 1: Registro manual (Recomendada para sincronizar entre dispositivos)
+
+Edita el archivo `data.js` en tu PC y haz push a GitHub:
+
+1. **Pésate** cada semana
+2. **Edita** `webapp/data.js` añadiendo el nuevo peso al array `weightLog`:
+
+```javascript
+let weightLog = JSON.parse(localStorage.getItem('dietloop_weights')) || [
+    { date: "2026-02-09", weight: 85, month: 1, week: 1 },
+    { date: "2026-02-16", weight: 84.3, month: 1, week: 2 },
+    { date: "2026-02-23", weight: 83.5, month: 1, week: 3 },
+    // Añade más registros aquí...
+];
+```
+
+3. **Guarda y haz push:**
+
+```bash
+git add .
+git commit -m "Registro peso semana X"
+git push origin main
+```
+
+4. La web se actualiza en 1-2 minutos y todos los dispositivos ven los mismos datos.
+
+### Opción 2: Registro desde la web
+
+Usa el formulario "Registrar Peso" en la sección Progreso:
+- Los datos se guardan en `localStorage` del navegador
+- Solo persisten en ESE dispositivo/navegador
+- No se sincronizan entre dispositivos
 
 ## 📁 Estructura de archivos
 
