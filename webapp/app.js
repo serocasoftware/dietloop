@@ -49,7 +49,10 @@ function initProfileSelector() {
         });
     });
 
-    document.getElementById('bechita-back-profile')?.addEventListener('click', () => showProfileSelector());
+    document.getElementById('bechita-back-profile')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        showProfileSelector();
+    });
     document.getElementById('papa-back-profile')?.addEventListener('click', (e) => {
         e.preventDefault();
         showProfileSelector();
@@ -279,6 +282,11 @@ function initNavigation() {
     navItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
+            if (item.dataset.action === 'back-to-profiles') {
+                closeMobileMenu();
+                showProfileSelector();
+                return;
+            }
             const view = item.dataset.view;
             
             // Actualizar navegación activa
