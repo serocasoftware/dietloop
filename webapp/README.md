@@ -16,6 +16,18 @@ La aplicación se adapta automáticamente al dispositivo:
 | **Tablet** (768px - 992px) | Sidebar más compacto |
 | **Móvil** (< 768px) | Menú hamburguesa, layout vertical |
 
+## Perfiles de usuario
+
+Al abrir la app se muestra una **página inicial para elegir el perfil**:
+
+| Perfil | Contenido |
+|--------|-----------|
+| **Papá** | Seguimiento de dieta y plan de ejercicio (todo el contenido original) |
+| **Bechita** | Calendario con el menú infantil de comedor escolar (datos en `webapp/data/menu_frutos_secos.json`) |
+| **Próximamente** | Reservado para un tercer perfil |
+
+Puedes cambiar de perfil en cualquier momento desde el menú ("Cambiar perfil" en Papá o "← Perfiles" en Bechita).
+
 ## Cómo usar
 
 ### Opción 1: Versión Online (Recomendada)
@@ -27,7 +39,8 @@ https://serocasoftware.github.io/dietloop/webapp/
 
 1. Navega a la carpeta `webapp`
 2. Haz doble clic en `index.html`
-3. Se abrirá en tu navegador predeterminado
+3. Se abrirá en tu navegador predeterminado  
+   **Nota:** El perfil Bechita carga el menú desde `webapp/data/menu_frutos_secos.json`. Para que funcione en local hay que abrir la app mediante un servidor (no con doble clic en el HTML); ver Opción 3.
 
 ### Opción 3: Servidor local
 
@@ -35,10 +48,13 @@ https://serocasoftware.github.io/dietloop/webapp/
 cd webapp
 python -m http.server 8080
 ```
-
 Luego abre: `http://localhost:8080`
 
+Tanto el perfil Papá como el de Bechita (menú comedor) funcionan: el menú se carga desde `data/menu_frutos_secos.json` dentro de webapp.
+
 ## Funcionalidades
+
+### Perfil Papá (dieta y ejercicio)
 
 ### 📊 Dashboard
 - Vista general del progreso del mes actual
@@ -79,6 +95,12 @@ Luego abre: `http://localhost:8080`
 - Alimentos prohibidos destacados
 - Consejos de compra
 - Precio estimado
+
+### Perfil Bechita (menú comedor)
+- Calendario mensual con los días de comedor
+- Clic en un día para ver: primer plato, segundo plato, guarnición y postre
+- Navegación por meses
+- Datos cargados desde `webapp/data/menu_frutos_secos.json` (menú para alergia a frutos de cáscara)
 
 ## 🚫 Alimentos Prohibidos
 

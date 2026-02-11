@@ -1,0 +1,1295 @@
+{
+  "metadata": {
+    "descripcion": "Menú escolar para alergia a frutos de cáscara (F. de cáscara)",
+    "fuente": "Alergias Menú Educare 2025-2026.xlsx",
+    "fecha_generacion": "2026-02-11",
+    "semana_actual": 4,
+    "fecha_inicio_ciclo": "2026-01-19",
+    "total_semanas_ciclo": 7,
+    "dias_por_semana": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  "menu_semanal": {
+    "semana_1": {
+      "Lunes": {
+        "primer_plato": "Arroz tres delicias casero",
+        "segundo_plato": "Suprema de merluza con salsa marinera",
+        "guarnicion": "Ensalada de lechuga y zanahoria",
+        "postre": "Fruta de temporada"
+      },
+      "Martes": {
+        "primer_plato": "Sopa de pasta integral",
+        "segundo_plato": "Ragout de pollo guisado al estilo tradicional",
+        "guarnicion": "Ensalada de lechuga, naranja y maiz",
+        "postre": "Yogur"
+      },
+      "Miércoles": {
+        "primer_plato": "Crema de verduras",
+        "segundo_plato": "Albóndigas de soja con salsa de tomate",
+        "guarnicion": "Patata fritas crujientes",
+        "postre": "Fruta de temporada"
+      },
+      "Jueves": {
+        "primer_plato": "Alubias blancas guisadas a la jardinera",
+        "segundo_plato": "Huevos revueltos con picadillo de chorizo",
+        "guarnicion": "Ensalada de lechuga y remolacha",
+        "postre": "Fruta de temporada"
+      },
+      "Viernes": {
+        "primer_plato": "Salteado de judías verdes, zanahoria y patata rehogado con ajito y cebolla",
+        "segundo_plato": "Macarrones con salsa boloñesa de cerdo",
+        "guarnicion": null,
+        "postre": "Fruta de temporada"
+      }
+    },
+    "semana_2": {
+      "Lunes": {
+        "primer_plato": "Arroz negro con calamares",
+        "segundo_plato": "Filete de pollo asado al curry",
+        "guarnicion": "Ensalada de lechuga y zanahoria",
+        "postre": "Fruta de temporada"
+      },
+      "Martes": {
+        "primer_plato": "Sopa de cocido",
+        "segundo_plato": "Cocido completo",
+        "guarnicion": null,
+        "postre": "Fruta de temporada"
+      },
+      "Miércoles": {
+        "primer_plato": "Crema de puerros natural",
+        "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+        "guarnicion": "Patata fritas crujientes",
+        "postre": "Fruta de temporada"
+      },
+      "Jueves": {
+        "primer_plato": "Lentejas guisadas a la hortelana",
+        "segundo_plato": "Tortilla de patata y cebolla",
+        "guarnicion": "Ensalada de lechuga y aceitunas",
+        "postre": "Fruta de temporada"
+      },
+      "Viernes": {
+        "primer_plato": "Macarrones integrales con salsa cremosa de queso",
+        "segundo_plato": "Solomillo de atún a la plancha",
+        "guarnicion": "Ensalada de tomate y cebolla con orégano",
+        "postre": "Yogur"
+      }
+    },
+    "semana_3": {
+      "Lunes": {
+        "primer_plato": "Crema de calabaza natural",
+        "segundo_plato": "Albóndigas de cerdo con salsa de verduras",
+        "guarnicion": "Arroz pilaf guarnición",
+        "postre": "Fruta de temporada"
+      },
+      "Martes": {
+        "primer_plato": "Espaguetis integrales con salsa italiana",
+        "segundo_plato": "Filete de abadejo en tempura",
+        "guarnicion": "Ensalada de lechuga y remolacha",
+        "postre": "Fruta de temporada"
+      },
+      "Miércoles": {
+        "primer_plato": "Alubias blancas estofadas al estilo tradicional",
+        "segundo_plato": "Huevos revueltos con jamón york y queso fundido",
+        "guarnicion": "Ensalada de lechuga y tomate",
+        "postre": "Fruta de temporada"
+      },
+      "Jueves": {
+        "primer_plato": "Arroz blanco salteado",
+        "segundo_plato": "Cuarto trasero de pollo con miel romero y limón",
+        "guarnicion": "Ensalada de lechuga y maíz",
+        "postre": "Yogur"
+      },
+      "Viernes": {
+        "primer_plato": "Sopa de cocido",
+        "segundo_plato": "Cocido completo",
+        "guarnicion": null,
+        "postre": "Fruta de temporada"
+      }
+    },
+    "semana_4": {
+      "Lunes": {
+        "primer_plato": "Fusilli integrales con salsa de tomate casera",
+        "segundo_plato": "Filete de merluza al horno con picada de perejil fresco",
+        "guarnicion": "Ensalada de lechuga y aceitunas",
+        "postre": "Fruta de temporada"
+      },
+      "Martes": {
+        "primer_plato": "Curry de arroz con verduras",
+        "segundo_plato": "Hamburguesa de ternera a la plancha",
+        "guarnicion": "Ensalada de tomate y cebolla con orégano",
+        "postre": "Yogur"
+      },
+      "Miércoles": {
+        "primer_plato": "Sopa de cocido",
+        "segundo_plato": "Cocido completo",
+        "guarnicion": null,
+        "postre": "Fruta de temporada"
+      },
+      "Jueves": {
+        "primer_plato": "Brócoli rehogado con ajito y cebolla pochada",
+        "segundo_plato": "Parmentier con boloñesa de pollo",
+        "guarnicion": null,
+        "postre": "Fruta de temporada"
+      },
+      "Viernes": {
+        "primer_plato": "Lentejas guisadas con zanahorias",
+        "segundo_plato": "Tortilla de patata y cebolla",
+        "guarnicion": "Ensalada de lechuga y zanahoria",
+        "postre": "Fruta de temporada"
+      }
+    },
+    "semana_5": {
+      "Lunes": {
+        "primer_plato": "Espaguetis integrales al pomodoro con hierbas aromáticas",
+        "segundo_plato": "Caballa al horno",
+        "guarnicion": "Ensalada tricolor de lechuga, zanahoria y maíz",
+        "postre": "Fruta de temporada"
+      },
+      "Martes": {
+        "primer_plato": "Risotto meloso de setas",
+        "segundo_plato": "Albóndigas de soja con salsa de tomate",
+        "guarnicion": "Ensalada de lechuga y remolacha",
+        "postre": "Fruta de temporada"
+      },
+      "Miércoles": {
+        "primer_plato": "Crema de zanahoria natural",
+        "segundo_plato": "Huevos a la plancha",
+        "guarnicion": "Patata fritas crujientes",
+        "postre": "Fruta de temporada"
+      },
+      "Jueves": {
+        "primer_plato": "Guisantes salteados con ajito y cebolla pochada",
+        "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+        "guarnicion": "Arroz pilaf guarnición",
+        "postre": "Fruta de temporada"
+      },
+      "Viernes": {
+        "primer_plato": "Lentejas guisadas a la jardinera",
+        "segundo_plato": "Cuarto trasero de pollo asado",
+        "guarnicion": "Ensalada de lechuga y tomate",
+        "postre": "Yogur"
+      }
+    },
+    "semana_6": {
+      "Lunes": {
+        "primer_plato": "Macarrones integrales salteados",
+        "segundo_plato": "Huevos revueltos con jamón york",
+        "guarnicion": "Ensalada de lechuga y maíz",
+        "postre": "Fruta de temporada"
+      },
+      "Martes": {
+        "primer_plato": "Alubias blancas guisadas con calabaza",
+        "segundo_plato": "Nuggets de pollo al horno",
+        "guarnicion": "Ensalada de lechuga y remolacha",
+        "postre": "Fruta de temporada"
+      },
+      "Miércoles": {
+        "primer_plato": "Arroz blanco con salsa de tomate casera aromatizada",
+        "segundo_plato": "Suprema de merluza en salsa verde",
+        "guarnicion": "Ensalada de lechuga y zanahoria",
+        "postre": "Yogur"
+      },
+      "Jueves": {
+        "primer_plato": "Sopa de cocido",
+        "segundo_plato": "Cocido completo",
+        "guarnicion": null,
+        "postre": "Fruta de temporada"
+      },
+      "Viernes": {
+        "primer_plato": "Crema de verduras",
+        "segundo_plato": "Carrillera de cerdo asada en salsa española",
+        "guarnicion": "Cous cous salteado",
+        "postre": "Fruta de temporada"
+      }
+    },
+    "semana_7": {
+      "Lunes": {
+        "primer_plato": "Arroz blanco con tomate frito",
+        "segundo_plato": "Filete de abadejo en tempura",
+        "guarnicion": "Ensalada de lechuga y aceitunas",
+        "postre": "Yogur"
+      },
+      "Martes": {
+        "primer_plato": "Sopa de cocido",
+        "segundo_plato": "Cocido completo",
+        "guarnicion": null,
+        "postre": "Fruta de temporada"
+      },
+      "Miércoles": {
+        "primer_plato": "Crema de calabacín",
+        "segundo_plato": "Albóndigas de pollo con verduras",
+        "guarnicion": "Patatas asadas",
+        "postre": "Fruta de temporada"
+      },
+      "Jueves": {
+        "primer_plato": "Lentejas guisadas con chorizo",
+        "segundo_plato": "Tortilla de patata y cebolla",
+        "guarnicion": "Ensalada de lechuga y zanahoria",
+        "postre": "Fruta de temporada"
+      },
+      "Viernes": {
+        "primer_plato": "Fusilli integrales carbonara con lardones de bacon",
+        "segundo_plato": "Filete de pollo asado con un punto de mostaza",
+        "guarnicion": "Ensalada de lechuga y maíz",
+        "postre": "Fruta de temporada"
+      }
+    }
+  },
+  "calendario": [
+    {
+      "fecha": "2026-01-19",
+      "dia_semana": "Lunes",
+      "semana_menu": 1,
+      "ciclo": 1,
+      "primer_plato": "Arroz tres delicias casero",
+      "segundo_plato": "Suprema de merluza con salsa marinera",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-20",
+      "dia_semana": "Martes",
+      "semana_menu": 1,
+      "ciclo": 1,
+      "primer_plato": "Sopa de pasta integral",
+      "segundo_plato": "Ragout de pollo guisado al estilo tradicional",
+      "guarnicion": "Ensalada de lechuga, naranja y maiz",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-01-21",
+      "dia_semana": "Miércoles",
+      "semana_menu": 1,
+      "ciclo": 1,
+      "primer_plato": "Crema de verduras",
+      "segundo_plato": "Albóndigas de soja con salsa de tomate",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-22",
+      "dia_semana": "Jueves",
+      "semana_menu": 1,
+      "ciclo": 1,
+      "primer_plato": "Alubias blancas guisadas a la jardinera",
+      "segundo_plato": "Huevos revueltos con picadillo de chorizo",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-23",
+      "dia_semana": "Viernes",
+      "semana_menu": 1,
+      "ciclo": 1,
+      "primer_plato": "Salteado de judías verdes, zanahoria y patata rehogado con ajito y cebolla",
+      "segundo_plato": "Macarrones con salsa boloñesa de cerdo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-26",
+      "dia_semana": "Lunes",
+      "semana_menu": 2,
+      "ciclo": 1,
+      "primer_plato": "Arroz negro con calamares",
+      "segundo_plato": "Filete de pollo asado al curry",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-27",
+      "dia_semana": "Martes",
+      "semana_menu": 2,
+      "ciclo": 1,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-28",
+      "dia_semana": "Miércoles",
+      "semana_menu": 2,
+      "ciclo": 1,
+      "primer_plato": "Crema de puerros natural",
+      "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-29",
+      "dia_semana": "Jueves",
+      "semana_menu": 2,
+      "ciclo": 1,
+      "primer_plato": "Lentejas guisadas a la hortelana",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-01-30",
+      "dia_semana": "Viernes",
+      "semana_menu": 2,
+      "ciclo": 1,
+      "primer_plato": "Macarrones integrales con salsa cremosa de queso",
+      "segundo_plato": "Solomillo de atún a la plancha",
+      "guarnicion": "Ensalada de tomate y cebolla con orégano",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-02-02",
+      "dia_semana": "Lunes",
+      "semana_menu": 3,
+      "ciclo": 1,
+      "primer_plato": "Crema de calabaza natural",
+      "segundo_plato": "Albóndigas de cerdo con salsa de verduras",
+      "guarnicion": "Arroz pilaf guarnición",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-03",
+      "dia_semana": "Martes",
+      "semana_menu": 3,
+      "ciclo": 1,
+      "primer_plato": "Espaguetis integrales con salsa italiana",
+      "segundo_plato": "Filete de abadejo en tempura",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-04",
+      "dia_semana": "Miércoles",
+      "semana_menu": 3,
+      "ciclo": 1,
+      "primer_plato": "Alubias blancas estofadas al estilo tradicional",
+      "segundo_plato": "Huevos revueltos con jamón york y queso fundido",
+      "guarnicion": "Ensalada de lechuga y tomate",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-05",
+      "dia_semana": "Jueves",
+      "semana_menu": 3,
+      "ciclo": 1,
+      "primer_plato": "Arroz blanco salteado",
+      "segundo_plato": "Cuarto trasero de pollo con miel romero y limón",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-02-06",
+      "dia_semana": "Viernes",
+      "semana_menu": 3,
+      "ciclo": 1,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-09",
+      "dia_semana": "Lunes",
+      "semana_menu": 4,
+      "ciclo": 1,
+      "primer_plato": "Fusilli integrales con salsa de tomate casera",
+      "segundo_plato": "Filete de merluza al horno con picada de perejil fresco",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-10",
+      "dia_semana": "Martes",
+      "semana_menu": 4,
+      "ciclo": 1,
+      "primer_plato": "Curry de arroz con verduras",
+      "segundo_plato": "Hamburguesa de ternera a la plancha",
+      "guarnicion": "Ensalada de tomate y cebolla con orégano",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-02-11",
+      "dia_semana": "Miércoles",
+      "semana_menu": 4,
+      "ciclo": 1,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-12",
+      "dia_semana": "Jueves",
+      "semana_menu": 4,
+      "ciclo": 1,
+      "primer_plato": "Brócoli rehogado con ajito y cebolla pochada",
+      "segundo_plato": "Parmentier con boloñesa de pollo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-13",
+      "dia_semana": "Viernes",
+      "semana_menu": 4,
+      "ciclo": 1,
+      "primer_plato": "Lentejas guisadas con zanahorias",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-16",
+      "dia_semana": "Lunes",
+      "semana_menu": 5,
+      "ciclo": 1,
+      "primer_plato": "Espaguetis integrales al pomodoro con hierbas aromáticas",
+      "segundo_plato": "Caballa al horno",
+      "guarnicion": "Ensalada tricolor de lechuga, zanahoria y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-17",
+      "dia_semana": "Martes",
+      "semana_menu": 5,
+      "ciclo": 1,
+      "primer_plato": "Risotto meloso de setas",
+      "segundo_plato": "Albóndigas de soja con salsa de tomate",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-18",
+      "dia_semana": "Miércoles",
+      "semana_menu": 5,
+      "ciclo": 1,
+      "primer_plato": "Crema de zanahoria natural",
+      "segundo_plato": "Huevos a la plancha",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-19",
+      "dia_semana": "Jueves",
+      "semana_menu": 5,
+      "ciclo": 1,
+      "primer_plato": "Guisantes salteados con ajito y cebolla pochada",
+      "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+      "guarnicion": "Arroz pilaf guarnición",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-20",
+      "dia_semana": "Viernes",
+      "semana_menu": 5,
+      "ciclo": 1,
+      "primer_plato": "Lentejas guisadas a la jardinera",
+      "segundo_plato": "Cuarto trasero de pollo asado",
+      "guarnicion": "Ensalada de lechuga y tomate",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-02-23",
+      "dia_semana": "Lunes",
+      "semana_menu": 6,
+      "ciclo": 1,
+      "primer_plato": "Macarrones integrales salteados",
+      "segundo_plato": "Huevos revueltos con jamón york",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-24",
+      "dia_semana": "Martes",
+      "semana_menu": 6,
+      "ciclo": 1,
+      "primer_plato": "Alubias blancas guisadas con calabaza",
+      "segundo_plato": "Nuggets de pollo al horno",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-25",
+      "dia_semana": "Miércoles",
+      "semana_menu": 6,
+      "ciclo": 1,
+      "primer_plato": "Arroz blanco con salsa de tomate casera aromatizada",
+      "segundo_plato": "Suprema de merluza en salsa verde",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-02-26",
+      "dia_semana": "Jueves",
+      "semana_menu": 6,
+      "ciclo": 1,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-02-27",
+      "dia_semana": "Viernes",
+      "semana_menu": 6,
+      "ciclo": 1,
+      "primer_plato": "Crema de verduras",
+      "segundo_plato": "Carrillera de cerdo asada en salsa española",
+      "guarnicion": "Cous cous salteado",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-02",
+      "dia_semana": "Lunes",
+      "semana_menu": 7,
+      "ciclo": 1,
+      "primer_plato": "Arroz blanco con tomate frito",
+      "segundo_plato": "Filete de abadejo en tempura",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-03-03",
+      "dia_semana": "Martes",
+      "semana_menu": 7,
+      "ciclo": 1,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-04",
+      "dia_semana": "Miércoles",
+      "semana_menu": 7,
+      "ciclo": 1,
+      "primer_plato": "Crema de calabacín",
+      "segundo_plato": "Albóndigas de pollo con verduras",
+      "guarnicion": "Patatas asadas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-05",
+      "dia_semana": "Jueves",
+      "semana_menu": 7,
+      "ciclo": 1,
+      "primer_plato": "Lentejas guisadas con chorizo",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-06",
+      "dia_semana": "Viernes",
+      "semana_menu": 7,
+      "ciclo": 1,
+      "primer_plato": "Fusilli integrales carbonara con lardones de bacon",
+      "segundo_plato": "Filete de pollo asado con un punto de mostaza",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-09",
+      "dia_semana": "Lunes",
+      "semana_menu": 1,
+      "ciclo": 2,
+      "primer_plato": "Arroz tres delicias casero",
+      "segundo_plato": "Suprema de merluza con salsa marinera",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-10",
+      "dia_semana": "Martes",
+      "semana_menu": 1,
+      "ciclo": 2,
+      "primer_plato": "Sopa de pasta integral",
+      "segundo_plato": "Ragout de pollo guisado al estilo tradicional",
+      "guarnicion": "Ensalada de lechuga, naranja y maiz",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-03-11",
+      "dia_semana": "Miércoles",
+      "semana_menu": 1,
+      "ciclo": 2,
+      "primer_plato": "Crema de verduras",
+      "segundo_plato": "Albóndigas de soja con salsa de tomate",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-12",
+      "dia_semana": "Jueves",
+      "semana_menu": 1,
+      "ciclo": 2,
+      "primer_plato": "Alubias blancas guisadas a la jardinera",
+      "segundo_plato": "Huevos revueltos con picadillo de chorizo",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-13",
+      "dia_semana": "Viernes",
+      "semana_menu": 1,
+      "ciclo": 2,
+      "primer_plato": "Salteado de judías verdes, zanahoria y patata rehogado con ajito y cebolla",
+      "segundo_plato": "Macarrones con salsa boloñesa de cerdo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-16",
+      "dia_semana": "Lunes",
+      "semana_menu": 2,
+      "ciclo": 2,
+      "primer_plato": "Arroz negro con calamares",
+      "segundo_plato": "Filete de pollo asado al curry",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-17",
+      "dia_semana": "Martes",
+      "semana_menu": 2,
+      "ciclo": 2,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-18",
+      "dia_semana": "Miércoles",
+      "semana_menu": 2,
+      "ciclo": 2,
+      "primer_plato": "Crema de puerros natural",
+      "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-19",
+      "dia_semana": "Jueves",
+      "semana_menu": 2,
+      "ciclo": 2,
+      "primer_plato": "Lentejas guisadas a la hortelana",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-20",
+      "dia_semana": "Viernes",
+      "semana_menu": 2,
+      "ciclo": 2,
+      "primer_plato": "Macarrones integrales con salsa cremosa de queso",
+      "segundo_plato": "Solomillo de atún a la plancha",
+      "guarnicion": "Ensalada de tomate y cebolla con orégano",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-03-23",
+      "dia_semana": "Lunes",
+      "semana_menu": 3,
+      "ciclo": 2,
+      "primer_plato": "Crema de calabaza natural",
+      "segundo_plato": "Albóndigas de cerdo con salsa de verduras",
+      "guarnicion": "Arroz pilaf guarnición",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-24",
+      "dia_semana": "Martes",
+      "semana_menu": 3,
+      "ciclo": 2,
+      "primer_plato": "Espaguetis integrales con salsa italiana",
+      "segundo_plato": "Filete de abadejo en tempura",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-25",
+      "dia_semana": "Miércoles",
+      "semana_menu": 3,
+      "ciclo": 2,
+      "primer_plato": "Alubias blancas estofadas al estilo tradicional",
+      "segundo_plato": "Huevos revueltos con jamón york y queso fundido",
+      "guarnicion": "Ensalada de lechuga y tomate",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-26",
+      "dia_semana": "Jueves",
+      "semana_menu": 3,
+      "ciclo": 2,
+      "primer_plato": "Arroz blanco salteado",
+      "segundo_plato": "Cuarto trasero de pollo con miel romero y limón",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-03-27",
+      "dia_semana": "Viernes",
+      "semana_menu": 3,
+      "ciclo": 2,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-30",
+      "dia_semana": "Lunes",
+      "semana_menu": 4,
+      "ciclo": 2,
+      "primer_plato": "Fusilli integrales con salsa de tomate casera",
+      "segundo_plato": "Filete de merluza al horno con picada de perejil fresco",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-03-31",
+      "dia_semana": "Martes",
+      "semana_menu": 4,
+      "ciclo": 2,
+      "primer_plato": "Curry de arroz con verduras",
+      "segundo_plato": "Hamburguesa de ternera a la plancha",
+      "guarnicion": "Ensalada de tomate y cebolla con orégano",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-04-01",
+      "dia_semana": "Miércoles",
+      "semana_menu": 4,
+      "ciclo": 2,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-02",
+      "dia_semana": "Jueves",
+      "semana_menu": 4,
+      "ciclo": 2,
+      "primer_plato": "Brócoli rehogado con ajito y cebolla pochada",
+      "segundo_plato": "Parmentier con boloñesa de pollo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-03",
+      "dia_semana": "Viernes",
+      "semana_menu": 4,
+      "ciclo": 2,
+      "primer_plato": "Lentejas guisadas con zanahorias",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-06",
+      "dia_semana": "Lunes",
+      "semana_menu": 5,
+      "ciclo": 2,
+      "primer_plato": "Espaguetis integrales al pomodoro con hierbas aromáticas",
+      "segundo_plato": "Caballa al horno",
+      "guarnicion": "Ensalada tricolor de lechuga, zanahoria y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-07",
+      "dia_semana": "Martes",
+      "semana_menu": 5,
+      "ciclo": 2,
+      "primer_plato": "Risotto meloso de setas",
+      "segundo_plato": "Albóndigas de soja con salsa de tomate",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-08",
+      "dia_semana": "Miércoles",
+      "semana_menu": 5,
+      "ciclo": 2,
+      "primer_plato": "Crema de zanahoria natural",
+      "segundo_plato": "Huevos a la plancha",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-09",
+      "dia_semana": "Jueves",
+      "semana_menu": 5,
+      "ciclo": 2,
+      "primer_plato": "Guisantes salteados con ajito y cebolla pochada",
+      "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+      "guarnicion": "Arroz pilaf guarnición",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-10",
+      "dia_semana": "Viernes",
+      "semana_menu": 5,
+      "ciclo": 2,
+      "primer_plato": "Lentejas guisadas a la jardinera",
+      "segundo_plato": "Cuarto trasero de pollo asado",
+      "guarnicion": "Ensalada de lechuga y tomate",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-04-13",
+      "dia_semana": "Lunes",
+      "semana_menu": 6,
+      "ciclo": 2,
+      "primer_plato": "Macarrones integrales salteados",
+      "segundo_plato": "Huevos revueltos con jamón york",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-14",
+      "dia_semana": "Martes",
+      "semana_menu": 6,
+      "ciclo": 2,
+      "primer_plato": "Alubias blancas guisadas con calabaza",
+      "segundo_plato": "Nuggets de pollo al horno",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-15",
+      "dia_semana": "Miércoles",
+      "semana_menu": 6,
+      "ciclo": 2,
+      "primer_plato": "Arroz blanco con salsa de tomate casera aromatizada",
+      "segundo_plato": "Suprema de merluza en salsa verde",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-04-16",
+      "dia_semana": "Jueves",
+      "semana_menu": 6,
+      "ciclo": 2,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-17",
+      "dia_semana": "Viernes",
+      "semana_menu": 6,
+      "ciclo": 2,
+      "primer_plato": "Crema de verduras",
+      "segundo_plato": "Carrillera de cerdo asada en salsa española",
+      "guarnicion": "Cous cous salteado",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-20",
+      "dia_semana": "Lunes",
+      "semana_menu": 7,
+      "ciclo": 2,
+      "primer_plato": "Arroz blanco con tomate frito",
+      "segundo_plato": "Filete de abadejo en tempura",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-04-21",
+      "dia_semana": "Martes",
+      "semana_menu": 7,
+      "ciclo": 2,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-22",
+      "dia_semana": "Miércoles",
+      "semana_menu": 7,
+      "ciclo": 2,
+      "primer_plato": "Crema de calabacín",
+      "segundo_plato": "Albóndigas de pollo con verduras",
+      "guarnicion": "Patatas asadas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-23",
+      "dia_semana": "Jueves",
+      "semana_menu": 7,
+      "ciclo": 2,
+      "primer_plato": "Lentejas guisadas con chorizo",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-24",
+      "dia_semana": "Viernes",
+      "semana_menu": 7,
+      "ciclo": 2,
+      "primer_plato": "Fusilli integrales carbonara con lardones de bacon",
+      "segundo_plato": "Filete de pollo asado con un punto de mostaza",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-27",
+      "dia_semana": "Lunes",
+      "semana_menu": 1,
+      "ciclo": 3,
+      "primer_plato": "Arroz tres delicias casero",
+      "segundo_plato": "Suprema de merluza con salsa marinera",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-28",
+      "dia_semana": "Martes",
+      "semana_menu": 1,
+      "ciclo": 3,
+      "primer_plato": "Sopa de pasta integral",
+      "segundo_plato": "Ragout de pollo guisado al estilo tradicional",
+      "guarnicion": "Ensalada de lechuga, naranja y maiz",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-04-29",
+      "dia_semana": "Miércoles",
+      "semana_menu": 1,
+      "ciclo": 3,
+      "primer_plato": "Crema de verduras",
+      "segundo_plato": "Albóndigas de soja con salsa de tomate",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-04-30",
+      "dia_semana": "Jueves",
+      "semana_menu": 1,
+      "ciclo": 3,
+      "primer_plato": "Alubias blancas guisadas a la jardinera",
+      "segundo_plato": "Huevos revueltos con picadillo de chorizo",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-01",
+      "dia_semana": "Viernes",
+      "semana_menu": 1,
+      "ciclo": 3,
+      "primer_plato": "Salteado de judías verdes, zanahoria y patata rehogado con ajito y cebolla",
+      "segundo_plato": "Macarrones con salsa boloñesa de cerdo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-04",
+      "dia_semana": "Lunes",
+      "semana_menu": 2,
+      "ciclo": 3,
+      "primer_plato": "Arroz negro con calamares",
+      "segundo_plato": "Filete de pollo asado al curry",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-05",
+      "dia_semana": "Martes",
+      "semana_menu": 2,
+      "ciclo": 3,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-06",
+      "dia_semana": "Miércoles",
+      "semana_menu": 2,
+      "ciclo": 3,
+      "primer_plato": "Crema de puerros natural",
+      "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-07",
+      "dia_semana": "Jueves",
+      "semana_menu": 2,
+      "ciclo": 3,
+      "primer_plato": "Lentejas guisadas a la hortelana",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-08",
+      "dia_semana": "Viernes",
+      "semana_menu": 2,
+      "ciclo": 3,
+      "primer_plato": "Macarrones integrales con salsa cremosa de queso",
+      "segundo_plato": "Solomillo de atún a la plancha",
+      "guarnicion": "Ensalada de tomate y cebolla con orégano",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-05-11",
+      "dia_semana": "Lunes",
+      "semana_menu": 3,
+      "ciclo": 3,
+      "primer_plato": "Crema de calabaza natural",
+      "segundo_plato": "Albóndigas de cerdo con salsa de verduras",
+      "guarnicion": "Arroz pilaf guarnición",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-12",
+      "dia_semana": "Martes",
+      "semana_menu": 3,
+      "ciclo": 3,
+      "primer_plato": "Espaguetis integrales con salsa italiana",
+      "segundo_plato": "Filete de abadejo en tempura",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-13",
+      "dia_semana": "Miércoles",
+      "semana_menu": 3,
+      "ciclo": 3,
+      "primer_plato": "Alubias blancas estofadas al estilo tradicional",
+      "segundo_plato": "Huevos revueltos con jamón york y queso fundido",
+      "guarnicion": "Ensalada de lechuga y tomate",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-14",
+      "dia_semana": "Jueves",
+      "semana_menu": 3,
+      "ciclo": 3,
+      "primer_plato": "Arroz blanco salteado",
+      "segundo_plato": "Cuarto trasero de pollo con miel romero y limón",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-05-15",
+      "dia_semana": "Viernes",
+      "semana_menu": 3,
+      "ciclo": 3,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-18",
+      "dia_semana": "Lunes",
+      "semana_menu": 4,
+      "ciclo": 3,
+      "primer_plato": "Fusilli integrales con salsa de tomate casera",
+      "segundo_plato": "Filete de merluza al horno con picada de perejil fresco",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-19",
+      "dia_semana": "Martes",
+      "semana_menu": 4,
+      "ciclo": 3,
+      "primer_plato": "Curry de arroz con verduras",
+      "segundo_plato": "Hamburguesa de ternera a la plancha",
+      "guarnicion": "Ensalada de tomate y cebolla con orégano",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-05-20",
+      "dia_semana": "Miércoles",
+      "semana_menu": 4,
+      "ciclo": 3,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-21",
+      "dia_semana": "Jueves",
+      "semana_menu": 4,
+      "ciclo": 3,
+      "primer_plato": "Brócoli rehogado con ajito y cebolla pochada",
+      "segundo_plato": "Parmentier con boloñesa de pollo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-22",
+      "dia_semana": "Viernes",
+      "semana_menu": 4,
+      "ciclo": 3,
+      "primer_plato": "Lentejas guisadas con zanahorias",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-25",
+      "dia_semana": "Lunes",
+      "semana_menu": 5,
+      "ciclo": 3,
+      "primer_plato": "Espaguetis integrales al pomodoro con hierbas aromáticas",
+      "segundo_plato": "Caballa al horno",
+      "guarnicion": "Ensalada tricolor de lechuga, zanahoria y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-26",
+      "dia_semana": "Martes",
+      "semana_menu": 5,
+      "ciclo": 3,
+      "primer_plato": "Risotto meloso de setas",
+      "segundo_plato": "Albóndigas de soja con salsa de tomate",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-27",
+      "dia_semana": "Miércoles",
+      "semana_menu": 5,
+      "ciclo": 3,
+      "primer_plato": "Crema de zanahoria natural",
+      "segundo_plato": "Huevos a la plancha",
+      "guarnicion": "Patata fritas crujientes",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-28",
+      "dia_semana": "Jueves",
+      "semana_menu": 5,
+      "ciclo": 3,
+      "primer_plato": "Guisantes salteados con ajito y cebolla pochada",
+      "segundo_plato": "Magro de cerdo estofado al estilo tradicional",
+      "guarnicion": "Arroz pilaf guarnición",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-05-29",
+      "dia_semana": "Viernes",
+      "semana_menu": 5,
+      "ciclo": 3,
+      "primer_plato": "Lentejas guisadas a la jardinera",
+      "segundo_plato": "Cuarto trasero de pollo asado",
+      "guarnicion": "Ensalada de lechuga y tomate",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-06-01",
+      "dia_semana": "Lunes",
+      "semana_menu": 6,
+      "ciclo": 3,
+      "primer_plato": "Macarrones integrales salteados",
+      "segundo_plato": "Huevos revueltos con jamón york",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-06-02",
+      "dia_semana": "Martes",
+      "semana_menu": 6,
+      "ciclo": 3,
+      "primer_plato": "Alubias blancas guisadas con calabaza",
+      "segundo_plato": "Nuggets de pollo al horno",
+      "guarnicion": "Ensalada de lechuga y remolacha",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-06-03",
+      "dia_semana": "Miércoles",
+      "semana_menu": 6,
+      "ciclo": 3,
+      "primer_plato": "Arroz blanco con salsa de tomate casera aromatizada",
+      "segundo_plato": "Suprema de merluza en salsa verde",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-06-04",
+      "dia_semana": "Jueves",
+      "semana_menu": 6,
+      "ciclo": 3,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-06-05",
+      "dia_semana": "Viernes",
+      "semana_menu": 6,
+      "ciclo": 3,
+      "primer_plato": "Crema de verduras",
+      "segundo_plato": "Carrillera de cerdo asada en salsa española",
+      "guarnicion": "Cous cous salteado",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-06-08",
+      "dia_semana": "Lunes",
+      "semana_menu": 7,
+      "ciclo": 3,
+      "primer_plato": "Arroz blanco con tomate frito",
+      "segundo_plato": "Filete de abadejo en tempura",
+      "guarnicion": "Ensalada de lechuga y aceitunas",
+      "postre": "Yogur"
+    },
+    {
+      "fecha": "2026-06-09",
+      "dia_semana": "Martes",
+      "semana_menu": 7,
+      "ciclo": 3,
+      "primer_plato": "Sopa de cocido",
+      "segundo_plato": "Cocido completo",
+      "guarnicion": null,
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-06-10",
+      "dia_semana": "Miércoles",
+      "semana_menu": 7,
+      "ciclo": 3,
+      "primer_plato": "Crema de calabacín",
+      "segundo_plato": "Albóndigas de pollo con verduras",
+      "guarnicion": "Patatas asadas",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-06-11",
+      "dia_semana": "Jueves",
+      "semana_menu": 7,
+      "ciclo": 3,
+      "primer_plato": "Lentejas guisadas con chorizo",
+      "segundo_plato": "Tortilla de patata y cebolla",
+      "guarnicion": "Ensalada de lechuga y zanahoria",
+      "postre": "Fruta de temporada"
+    },
+    {
+      "fecha": "2026-06-12",
+      "dia_semana": "Viernes",
+      "semana_menu": 7,
+      "ciclo": 3,
+      "primer_plato": "Fusilli integrales carbonara con lardones de bacon",
+      "segundo_plato": "Filete de pollo asado con un punto de mostaza",
+      "guarnicion": "Ensalada de lechuga y maíz",
+      "postre": "Fruta de temporada"
+    }
+  ]
+}

@@ -9,7 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="app-container">
+    <!-- ========== Selector de perfil (página inicial) ========== -->
+    <div id="profile-selector-view" class="profile-selector-view">
+        <div class="profile-selector-content">
+            <div class="profile-selector-header">
+                <span class="logo-icon">🎯</span>
+                <h1>DietLoop</h1>
+                <p class="profile-selector-subtitle">Elige el perfil para continuar</p>
+            </div>
+            <div class="profile-cards">
+                <button type="button" class="profile-card" data-profile="papa" aria-label="Perfil Papá - Dieta y ejercicio">
+                    <span class="profile-card-icon">👨</span>
+                    <h2>Papá</h2>
+                    <p>Seguimiento de dieta y plan de ejercicio</p>
+                </button>
+                <button type="button" class="profile-card" data-profile="bechita" aria-label="Perfil Bechita - Menú comedor">
+                    <span class="profile-card-icon">👧</span>
+                    <h2>Bechita</h2>
+                    <p>Menú infantil de comedor escolar</p>
+                </button>
+                <button type="button" class="profile-card profile-card-coming" data-profile="third" disabled aria-label="Perfil próximo">
+                    <span class="profile-card-icon">👤</span>
+                    <h2>Próximamente</h2>
+                    <p>Otro perfil en preparación</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== App Papá (dieta y ejercicio) ========== -->
+    <div id="papa-app" class="app-container" hidden>
         <!-- Mobile Header -->
         <header class="mobile-header">
             <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
@@ -62,6 +91,10 @@
                 <a href="#" class="nav-item" data-view="shopping">
                     <span class="nav-icon">🛒</span>
                     Próxima Compra
+                </a>
+                <a href="#" class="nav-item nav-item-profile" id="papa-back-profile" data-action="back-to-profiles">
+                    <span class="nav-icon">👤</span>
+                    Cambiar perfil
                 </a>
             </nav>
             <div class="user-stats">
@@ -385,6 +418,33 @@
                     <ul id="shopping-tips"></ul>
                 </div>
             </section>
+        </main>
+    </div>
+    <!-- fin papa-app -->
+
+    <!-- ========== App Bechita (menú comedor) ========== -->
+    <div id="bechita-app" class="bechita-app" hidden>
+        <header class="bechita-header">
+            <button type="button" class="btn-back-profile" id="bechita-back-profile" aria-label="Cambiar perfil">← Perfiles</button>
+            <div class="bechita-title">
+                <span class="logo-icon">🎯</span>
+                <h1>DietLoop · Bechita</h1>
+            </div>
+            <span class="bechita-menu-label">Menú comedor</span>
+        </header>
+        <main class="bechita-main">
+            <div class="comedor-info" id="comedor-info">
+                <p class="comedor-desc" id="comedor-desc">Cargando menú…</p>
+            </div>
+            <div class="comedor-controls">
+                <button type="button" class="btn-month" id="comedor-prev-month">◀</button>
+                <span id="comedor-month-display">Mes</span>
+                <button type="button" class="btn-month" id="comedor-next-month">▶</button>
+            </div>
+            <div class="comedor-calendar-grid" id="comedor-calendar-grid"></div>
+            <div class="comedor-day-detail card" id="comedor-day-detail">
+                <p class="comedor-day-placeholder">Selecciona un día del calendario para ver el menú</p>
+            </div>
         </main>
     </div>
 

@@ -10,11 +10,76 @@ const appState = {
     selectedWeek: 1,
     shoppingMonth: 1,
     shoppingWeek: 1,
-    charts: {}
+    charts: {},
+    currentProfile: null,
+    menuComedor: null
 };
+
+// Perfiles: papa = dieta/ejercicio, bechita = menú comedor. third = reservado para futuro perfil.
+const PROFILE_IDS = { PAPA: 'papa', BECHITA: 'bechita', THIRD: 'third' };
+const MENU_JSON_PATH = 'data/menu_frutos_secos.json';
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', () => {
+    initProfileSelector();
+    const saved = sessionStorage.getItem('dietloop_profile');
+    if (saved === PROFILE_IDS.PAPA) {
+        selectProfile(PROFILE_IDS.PAPA);
+    } else if (saved === PROFILE_IDS.BECHITA) {
+        selectProfile(PROFILE_IDS.BECHITA);
+    }
+});
+
+// ============================================
+// Selector de perfil
+// ============================================
+
+function initProfileSelector() {
+    const selectorView = document.getElementById('profile-selector-view');
+    const papaApp = document.getElementById('papa-app');
+    const bechitaApp = document.getElementById('bechita-app');
+
+    document.querySelectorAll('.profile-card:not([disabled])').forEach(card => {
+        card.addEventListener('click', () => {
+            const profile = card.dataset.profile;
+            if (profile === PROFILE_IDS.THIRD) return;
+            selectProfile(profile);
+        });
+    });
+
+    document.getElementById('bechita-back-profile')?.addEventListener('click', () => showProfileSelector());
+    document.getElementById('papa-back-profile')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        showProfileSelector();
+    });
+}
+
+function showProfileSelector() {
+    sessionStorage.removeItem('dietloop_profile');
+    appState.currentProfile = null;
+    document.getElementById('profile-selector-view').classList.remove('hidden');
+    document.getElementById('papa-app').setAttribute('hidden', '');
+    document.getElementById('bechita-app').setAttribute('hidden', '');
+}
+
+function selectProfile(profileId) {
+    appState.currentProfile = profileId;
+    sessionStorage.setItem('dietloop_profile', profileId);
+    document.getElementById('profile-selector-view').classList.add('hidden');
+
+    if (profileId === PROFILE_IDS.PAPA) {
+        document.getElementById('papa-app').removeAttribute('hidden');
+        document.getElementById('bechita-app').setAttribute('hidden', '');
+        initPapaApp();
+    } else if (profileId === PROFILE_IDS.BECHITA) {
+        document.getElementById('papa-app').setAttribute('hidden', '');
+        document.getElementById('bechita-app').removeAttribute('hidden');
+        initBechitaApp();
+    }
+    // Añadir aquí cuando definas el tercer perfil: else if (profileId === PROFILE_IDS.THIRD) { ... }
+}
+
+function initPapaApp() {
     initNavigation();
     initMobileMenu();
     initMonthSelectors();
@@ -29,7 +94,168 @@ document.addEventListener('DOMContentLoaded', () => {
     renderHistory();
     renderShoppingList();
     setTodayDate();
-});
+}
+
+// ============================================
+// Bechita - Menú comedor
+// ============================================
+
+function initBechitaApp() {
+    loadMenuComedor().then(() => {
+        renderComedorInfo();
+        renderComedorCalendar();
+        initComedorMonthSelectors();
+    }).catch(() => {
+        document.getElementById('comedor-desc').textContent = 'No se pudo cargar el menú. Comprueba que exista webapp/data/menu_frutos_secos.json y que abras la app mediante un servidor (p. ej. desde la carpeta webapp: python -m http.server 8080).';
+    });
+}
+
+function getMenuComedorMonthYear() {
+    const key = 'comedor_month_year';
+    const stored = sessionStorage.getItem(key);
+    if (stored) {
+        const [y, m] = stored.split('-').map(Number);
+        return { year: y, month: m };
+    }
+    const now = new Date();
+    return { year: now.getFullYear(), month: now.getMonth() + 1 };
+}
+
+function setMenuComedorMonthYear(year, month) {
+    sessionStorage.setItem('comedor_month_year', `${year}-${month}`);
+}
+
+function loadMenuComedor() {
+    return fetch(MENU_JSON_PATH)
+        .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
+        .then(data => {
+            appState.menuComedor = data;
+            return data;
+        });
+}
+
+function renderComedorInfo() {
+    const meta = appState.menuComedor?.metadata;
+    const el = document.getElementById('comedor-desc');
+    if (!meta) return;
+    el.textContent = meta.descripcion || 'Menú escolar comedor';
+}
+
+function initComedorMonthSelectors() {
+    let { year, month } = getMenuComedorMonthYear();
+    const display = document.getElementById('comedor-month-display');
+
+    function updateDisplay() {
+        const names = ['', 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        if (display) display.textContent = `${names[month]} ${year}`;
+        renderComedorCalendar();
+    }
+
+    document.getElementById('comedor-prev-month')?.addEventListener('click', () => {
+        month--;
+        if (month < 1) { month = 12; year--; }
+        setMenuComedorMonthYear(year, month);
+        updateDisplay();
+    });
+    document.getElementById('comedor-next-month')?.addEventListener('click', () => {
+        month++;
+        if (month > 12) { month = 1; year++; }
+        setMenuComedorMonthYear(year, month);
+        updateDisplay();
+    });
+    updateDisplay();
+}
+
+function renderComedorCalendar() {
+    const grid = document.getElementById('comedor-calendar-grid');
+    const detail = document.getElementById('comedor-day-detail');
+    if (!grid || !appState.menuComedor?.calendario) return;
+
+    const { year, month } = getMenuComedorMonthYear();
+    const names = ['', 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    document.getElementById('comedor-month-display').textContent = `${names[month]} ${year}`;
+
+    const calendario = appState.menuComedor.calendario;
+    const monthStr = String(month).padStart(2, '0');
+    const daysInMonth = new Date(year, month, 0).getDate();
+    const firstDay = new Date(year, month - 1, 1).getDay();
+    const lunesFirst = firstDay === 0 ? 6 : firstDay - 1;
+
+    grid.innerHTML = '';
+    const weekDays = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
+    weekDays.forEach(d => {
+        const h = document.createElement('div');
+        h.style.cssText = 'text-align:center;font-weight:600;color:var(--text-secondary);padding:8px;';
+        h.textContent = d;
+        grid.appendChild(h);
+    });
+
+    const dayMap = {};
+    calendario.forEach(entry => {
+        const key = entry.fecha;
+        dayMap[key] = entry;
+    });
+
+    let cellCount = lunesFirst;
+    for (let i = 0; i < lunesFirst; i++) {
+        const empty = document.createElement('div');
+        empty.className = 'comedor-calendar-day';
+        empty.style.visibility = 'hidden';
+        grid.appendChild(empty);
+    }
+
+    for (let d = 1; d <= daysInMonth; d++) {
+        const dateStr = `${year}-${monthStr}-${String(d).padStart(2, '0')}`;
+        const entry = dayMap[dateStr];
+        const cell = document.createElement('div');
+        cell.className = 'comedor-calendar-day';
+        if (entry) cell.classList.add('has-menu');
+        cell.innerHTML = `<span class="comedor-day-num">${d}</span><span class="comedor-day-week">${entry ? entry.dia_semana : ''}</span>`;
+        cell.dataset.fecha = dateStr;
+        cell.addEventListener('click', () => {
+            grid.querySelectorAll('.comedor-calendar-day').forEach(c => c.classList.remove('selected'));
+            cell.classList.add('selected');
+            renderComedorDayDetail(dateStr, detail);
+        });
+        grid.appendChild(cell);
+    }
+}
+
+function renderComedorDayDetail(fecha, container) {
+    if (!container) container = document.getElementById('comedor-day-detail');
+    const entry = appState.menuComedor?.calendario?.find(e => e.fecha === fecha);
+    const placeholder = container.querySelector('.comedor-day-placeholder');
+    if (!entry) {
+        if (placeholder) placeholder.hidden = false;
+        container.querySelectorAll('.comedor-menu-item').forEach(el => el.remove());
+        const h3 = container.querySelector('h3');
+        if (h3) h3.remove();
+        return;
+    }
+    if (placeholder) placeholder.hidden = true;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const title = new Date(fecha + 'T12:00:00').toLocaleDateString('es-ES', options);
+    let h3 = container.querySelector('h3');
+    if (!h3) {
+        h3 = document.createElement('h3');
+        container.insertBefore(h3, container.firstChild);
+    }
+    h3.textContent = title.charAt(0).toUpperCase() + title.slice(1);
+    const items = [
+        { label: 'Primer plato', value: entry.primer_plato },
+        { label: 'Segundo plato', value: entry.segundo_plato },
+        { label: 'Guarnición', value: entry.guarnicion },
+        { label: 'Postre', value: entry.postre }
+    ];
+    container.querySelectorAll('.comedor-menu-item').forEach(el => el.remove());
+    items.forEach(({ label, value }) => {
+        if (!value) return;
+        const div = document.createElement('div');
+        div.className = 'comedor-menu-item';
+        div.innerHTML = `<div class="comedor-menu-label">${label}</div><div class="comedor-menu-value">${value}</div>`;
+        container.appendChild(div);
+    });
+}
 
 // ============================================
 // Navegación
