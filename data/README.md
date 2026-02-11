@@ -7,7 +7,7 @@ Esta carpeta contiene los datos extraídos del menú del comedor escolar Educare
 | Archivo | Descripción |
 |---------|-------------|
 | `Alergias Menú Educare 2025-2026.xlsx` | Fichero Excel original con el menú completo del comedor |
-| `menu_frutos_secos.json` | Menú extraído para alergia a frutos de cáscara (frutos secos) |
+| `menu_frutos_secos.json` | Menú extraído para alergia a frutos de cáscara (frutos secos). La webapp usa una copia en `webapp/data/menu_frutos_secos.json` para cargar el perfil Bechita. |
 
 ## Estructura del menú
 

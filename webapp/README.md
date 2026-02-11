@@ -151,12 +151,16 @@ Usa el formulario "Registrar Peso" en la sección Progreso:
 
 ```
 webapp/
-├── index.html    # Estructura HTML + componentes móviles
+├── index.html    # Página inicial (selector de perfil) + vistas Papá y Bechita
 ├── styles.css    # Estilos + media queries responsive
-├── app.js        # Lógica + menú móvil
-├── data.js       # Datos del plan + listas de compra
+├── app.js        # Lógica, perfiles, menú móvil y calendario comedor
+├── data.js       # Datos del plan de dieta/ejercicio + listas de compra
+├── data/
+│   └── menu_frutos_secos.json   # Menú comedor (perfil Bechita)
 └── README.md     # Este archivo
 ```
+
+El JSON del menú en `webapp/data/` es una copia del generado en `data/menu_frutos_secos.json` para que la app pueda cargarlo al servirse desde la carpeta webapp.
 
 ## 🔧 Personalización
 
