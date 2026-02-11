@@ -49,6 +49,27 @@ body {
     min-height: 100vh;
 }
 
+/* Página inicial: solo selector de perfiles, sin scroll ni contenido residual */
+body.profile-selector-active {
+    overflow: hidden;
+    height: 100vh;
+    height: 100dvh;
+    position: fixed;
+    width: 100%;
+}
+body.profile-selector-active #profile-selector-view {
+    position: relative;
+    z-index: 2;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+body.profile-selector-active #papa-app,
+body.profile-selector-active #bechita-app {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 /* ============================================
    Layout
    ============================================ */
@@ -1620,11 +1641,13 @@ tr:hover td {
 
 .profile-selector-view {
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 24px;
     background: var(--bg-dark);
+    box-sizing: border-box;
 }
 
 .profile-selector-view.hidden {
@@ -1912,24 +1935,189 @@ tr:hover td {
     color: var(--text-primary);
 }
 
+/* ============================================
+   Responsive - Selector de perfil y Bechita en móvil
+   ============================================ */
+
 @media (max-width: 768px) {
+    .profile-selector-view {
+        padding: 16px 12px;
+        padding-top: max(16px, env(safe-area-inset-top));
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+        align-items: flex-start;
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+    .profile-selector-content {
+        width: 100%;
+        padding-top: 8px;
+    }
+    .profile-selector-header {
+        margin-bottom: 28px;
+    }
+    .profile-selector-header .logo-icon {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+    .profile-selector-header h1 {
+        font-size: 28px;
+    }
+    .profile-selector-subtitle {
+        font-size: 16px;
+    }
     .profile-cards {
         grid-template-columns: 1fr;
+        gap: 16px;
+        justify-items: stretch;
     }
+    .profile-card {
+        max-width: none;
+        padding: 24px 20px;
+        min-height: 72px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        text-align: left;
+    }
+    .profile-card-icon {
+        font-size: 36px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    .profile-card h2 {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    .profile-card p {
+        font-size: 13px;
+        margin: 0;
+    }
+    .profile-card-coming {
+        opacity: 0.6;
+    }
+    /* Bechita móvil */
     .bechita-header {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 12px 16px;
+        padding-top: max(12px, env(safe-area-inset-top));
+        gap: 8px;
+    }
+    .btn-back-profile {
+        order: 1;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    .bechita-title {
+        order: 2;
+        flex: 1;
+        justify-content: center;
+        min-width: 0;
+    }
+    .bechita-title h1 {
+        font-size: 16px;
+    }
+    .bechita-title .logo-icon {
+        font-size: 22px;
+    }
+    .bechita-menu-label {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .bechita-main {
+        padding: 16px 12px;
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
+    }
+    .comedor-info {
+        margin-bottom: 12px;
+    }
+    .comedor-desc {
+        font-size: 13px;
+    }
+    .comedor-controls {
+        margin-bottom: 16px;
+        gap: 12px;
+    }
+    .comedor-controls .btn-month {
+        padding: 10px 14px;
+    }
+    #comedor-month-display {
+        font-size: 14px;
+        min-width: 100px;
     }
     .comedor-calendar-grid {
         grid-template-columns: repeat(7, 1fr);
         gap: 4px;
+        margin-bottom: 16px;
     }
     .comedor-calendar-day {
-        min-height: 48px;
-        padding: 8px;
+        min-height: 44px;
+        padding: 6px 4px;
     }
     .comedor-calendar-day .comedor-day-num {
+        font-size: 13px;
+    }
+    .comedor-calendar-day .comedor-day-week {
+        font-size: 9px;
+        display: none;
+    }
+    .comedor-day-detail {
+        padding: 16px;
+    }
+    .comedor-day-detail h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    .comedor-menu-item {
+        padding: 10px 0;
+    }
+    .comedor-menu-item .comedor-menu-label {
+        font-size: 11px;
+    }
+    .comedor-menu-item .comedor-menu-value {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-selector-view {
+        padding: 12px 10px;
+    }
+    .profile-selector-header .logo-icon {
+        font-size: 36px;
+    }
+    .profile-selector-header h1 {
+        font-size: 24px;
+    }
+    .profile-selector-subtitle {
+        font-size: 14px;
+    }
+    .profile-card {
+        padding: 20px 16px;
+        gap: 12px;
+    }
+    .profile-card-icon {
+        font-size: 32px;
+    }
+    .profile-card h2 {
+        font-size: 18px;
+    }
+    .profile-card p {
+        font-size: 12px;
+    }
+    .bechita-title h1 {
+        font-size: 15px;
+    }
+    .comedor-calendar-day {
+        min-height: 40px;
+    }
+    .comedor-calendar-day .comedor-day-num {
+        font-size: 12px;
     }
 }
 

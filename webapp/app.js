@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
         selectProfile(PROFILE_IDS.PAPA);
     } else if (saved === PROFILE_IDS.BECHITA) {
         selectProfile(PROFILE_IDS.BECHITA);
+    } else {
+        setProfileSelectorActive(true);
     }
 });
 
@@ -54,9 +56,18 @@ function initProfileSelector() {
     });
 }
 
+function setProfileSelectorActive(active) {
+    if (active) {
+        document.body.classList.add('profile-selector-active');
+    } else {
+        document.body.classList.remove('profile-selector-active');
+    }
+}
+
 function showProfileSelector() {
     sessionStorage.removeItem('dietloop_profile');
     appState.currentProfile = null;
+    setProfileSelectorActive(true);
     document.getElementById('profile-selector-view').classList.remove('hidden');
     document.getElementById('papa-app').setAttribute('hidden', '');
     document.getElementById('bechita-app').setAttribute('hidden', '');
@@ -65,6 +76,7 @@ function showProfileSelector() {
 function selectProfile(profileId) {
     appState.currentProfile = profileId;
     sessionStorage.setItem('dietloop_profile', profileId);
+    setProfileSelectorActive(false);
     document.getElementById('profile-selector-view').classList.add('hidden');
 
     if (profileId === PROFILE_IDS.PAPA) {
